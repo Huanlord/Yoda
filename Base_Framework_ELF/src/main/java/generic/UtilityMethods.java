@@ -48,6 +48,7 @@ public class UtilityMethods implements FrameworkConstants  {
 	public void enter_value(WebElement TextField,String value) {		
 		TextField.sendKeys(value);
 	}
+	
 
 	public Select select_classObject(WebElement DropDown){		
 		Select select= new Select(DropDown);		

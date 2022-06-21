@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Browser window is maximized successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-06-16T17:23:39 IST" name="Default suite" finished-at="2022-06-16T17:24:23 IST" duration-ms="44509">
+  <suite name="Default suite" duration-ms="12247" started-at="2022-06-20T04:55:53Z" finished-at="2022-06-20T04:56:05Z">
     <groups>
     </groups>
-    <test started-at="2022-06-16T17:23:39 IST" name="Default test" finished-at="2022-06-16T17:24:23 IST" duration-ms="44509">
-      <class name="test_Scripts.TestScript1">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-06-16T17:23:38 IST" name="beforeSuit" finished-at="2022-06-16T17:23:39 IST" duration-ms="114" status="PASS">
+    <test name="Default test" duration-ms="12247" started-at="2022-06-20T04:55:53Z" finished-at="2022-06-20T04:56:05Z">
+      <class name="test_Scripts.TestScript5">
+        <test-method status="PASS" signature="beforeSuit()[pri:0, instance:test_Scripts.TestScript5@490ab905]" name="beforeSuit" is-config="true" duration-ms="911" started-at="2022-06-20T10:25:52Z" finished-at="2022-06-20T10:25:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-06-16T17:23:39 IST" name="openApplication" finished-at="2022-06-16T17:24:13 IST" duration-ms="34611" status="PASS">
+        <test-method status="PASS" signature="openApplication(java.lang.String)[pri:0, instance:test_Scripts.TestScript5@490ab905]" name="openApplication" is-config="true" duration-ms="9579" started-at="2022-06-20T10:25:53Z" finished-at="2022-06-20T10:26:03Z">
           <params>
             <param index="0">
               <value>
@@ -28,31 +28,54 @@
             </line>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="testScript1(java.lang.String,java.lang.String)[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-06-16T17:24:13 IST" name="testScript1" data-provider="testdata" finished-at="2022-06-16T17:24:23 IST" duration-ms="9339" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[yogita]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[medbch]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="FAIL" signature="testscript5(java.lang.String, java.lang.String)[pri:0, instance:test_Scripts.TestScript5@490ab905]" name="testscript5" duration-ms="2412" started-at="2022-06-20T10:26:03Z" data-provider="testdata" finished-at="2022-06-20T10:26:05Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: testscript5([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)shivarajnagaroor@gmail.com,(java.lang.String)12355,(java.lang.String),(java.lang.String),(java.lang.String)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: testscript5([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)shivarajnagaroor@gmail.com,(java.lang.String)12355,(java.lang.String),(java.lang.String),(java.lang.String)]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:49)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1187)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScript1 -->
-        <test-method is-config="true" signature="CloseApp()[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-06-16T17:24:23 IST" name="CloseApp" finished-at="2022-06-16T17:24:23 IST" duration-ms="188" status="PASS">
+        </test-method> <!-- testscript5 -->
+        <test-method status="PASS" signature="CloseApp()[pri:0, instance:test_Scripts.TestScript5@490ab905]" name="CloseApp" is-config="true" duration-ms="230" started-at="2022-06-20T10:26:05Z" finished-at="2022-06-20T10:26:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test_Scripts.TestScript1@2ea41516]" started-at="2022-06-16T17:24:23 IST" name="afterSuite" finished-at="2022-06-16T17:24:23 IST" duration-ms="146" status="PASS">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test_Scripts.TestScript5@490ab905]" name="afterSuite" is-config="true" duration-ms="577" started-at="2022-06-20T10:26:05Z" finished-at="2022-06-20T10:26:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- test_Scripts.TestScript1 -->
+      </class> <!-- test_Scripts.TestScript5 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
